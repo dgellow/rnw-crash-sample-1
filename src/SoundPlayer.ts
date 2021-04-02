@@ -2,7 +2,7 @@ import { Alert } from "react-native"
 import { NativeModules } from "react-native"
 
 const { SoundPlayer } = NativeModules
-
+console.log("SoundPlayer", SoundPlayer)
 
 export enum SoundKind {
 	Focus = 0,
@@ -14,12 +14,7 @@ export enum SoundKind {
 	GoBack,
 }
 
-
 export function playSound(sound: SoundKind) {
-	// debugger
-	// FancyMath.play(sound, () => {
-	SoundPlayer.play(sound)
-	Alert.alert("FancyMath", "Sound player!", [{ text: "OK" }], { cancelable: false })
-	// })
-	// debugger
+	SoundPlayer.play(sound) // <== Crashes the application
+	Alert.alert("Native module SoundPlayer", "Sound played!", [{ text: "OK" }], { cancelable: false })
 }
