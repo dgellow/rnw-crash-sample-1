@@ -2,6 +2,10 @@
 
 Bug report: https://github.com/microsoft/react-native-windows/issues/7517
 
+## Fix
+
+Check https://github.com/dgellow/rnw-crash-sample-1/pull/1 for the fix!
+
 ## Steps to reproduce
 
 1. `git clone https://github.com/dgellow/rnw-crash-sample-1.git`
@@ -12,3 +16,4 @@ Bug report: https://github.com/microsoft/react-native-windows/issues/7517
 6. notice how the application crashes without stack trace or error log (it just exits directly)
 
 ![screencast gif](assets/recording.gif)
+
