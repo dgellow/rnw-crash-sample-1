@@ -15,6 +15,6 @@ export enum SoundKind {
 }
 
 export function playSound(sound: SoundKind) {
-	SoundPlayer.play(sound) // <== Crashes the application
-	Alert.alert("Native module SoundPlayer", "Sound played!", [{ text: "OK" }], { cancelable: false })
+	SoundPlayer.play(sound)
+	// Alert.alert("Native module SoundPlayer", "Sound played!", [{ text: "OK" }], { cancelable: false })
 }
